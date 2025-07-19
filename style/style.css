@@ -1,0 +1,262 @@
+/* General Styling */
+body {
+    font-family: 'Courier New', Courier, monospace; /* A clean, modern sans-serif font */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container-fluid { /* Optional: For centering content */
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #111;
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky; /* Sticky navigation */
+    top: 0;
+    z-index: 1000;
+}
+.logo-section{
+    display:flex;
+    align-items:center;
+}
+.logo{
+    color:#fff;
+    background-color:rgb(87, 2, 61);
+    height:30px;
+    width:30px;
+    text-align:center;
+    border-radius:50%;
+    font-size:20px;
+    font-weight:600;
+    font-family:'Courier New', Courier, monospace;
+    margin-right:5px;
+    box-shadow: 0 0 5px white;
+    text-align:center;
+}
+.navbar-brand{
+    color:#f4f4f4;
+    font-size:20px;
+    font-weight: 600;
+}
+.navbar-brand:hover{
+    color:w#fff;
+}
+.nav-link{
+    color:#f5f5f5;
+    font-size:1.2rem;
+}
+.nav-link:active,.nav-link:focus{
+    color:#f5f5f5;
+    outline:none;
+}
+.nav-link:hover{
+    color:rgb(224, 253, 2);
+}
+.navbar-toggler{
+    background-color:#f4f4f4;
+    width:30px;
+    height:30px;
+    padding:0.1px;
+}
+.navbar-toggler:focus,.navbar-toggler:active{
+    box-shadow: 0 0 15px white ;
+    outline: none ;
+    
+}
+/* Hero Section */
+.hero {
+    background-color: rgb(87, 2, 61); /* A vibrant green or color of your choice */
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+.hero-content{
+    padding: 10px 12px;
+    align-items:center;
+    padding-top:0.5rem;
+}
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+.img{
+    height: 80%;
+    width: 80%;
+    border-radius:50%;
+    box-shadow: 0 0 2px white;
+}
+.img-container{
+    align-items:center;
+}
+
+.button {
+    display: inline-block;
+    background-color: #141414;
+    color: azure;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top:20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px white;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #202020;
+}
+
+.button.small { /* For project links */
+    padding: 8px 15px;
+    font-size: 0.9rem;
+}
+
+
+/* Section Styling */
+section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #f5f5f5;
+}
+
+/* About Section */
+.about {
+    background-color: rgb(87, 2, 61);
+}
+.aboutme{
+    color:#29e610
+}
+.about p{
+    color:#f5f5f5;
+    padding-bottom:50px;
+    font-size:1.2rem;
+}
+
+/* Skills Section */
+.skills {
+    background-color:rgb(87, 2, 61) ; /* Light gray background */
+}
+.item-container{
+    margin:30px;
+}
+.item-container img{
+    height:100px;
+    width:100px;
+    border-radius:5px;
+    margin:5px 0 5px 0;
+}
+.item-container p{
+    margin-bottom:15px;
+}
+.item-container img:hover{
+    transform:scale(1.1);
+    box-shadow: 0 0 5px white;
+    transition:ease-in-out 0.2s;
+}
+.skill-item {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    font-size:1.5rem
+}
+
+/* Projects Section */
+.projects {
+    background-color: rgb(87, 2, 61);
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background-color: #f8f9fa; /* Lighter background for cards */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: left;
+}
+.project-card:hover{
+    transform:scale(1.02);
+    box-shadow: 0 0 10px white;
+    transition:ease-in-out 0.2s;
+}
+.project-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #5cb85c;
+}
+
+.project-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.project-links a {
+    margin-right: 10px;
+}
+
+/* Contact Section */
+.contact {
+    background-color: rgb(87, 2, 61);
+    color: #fff;
+}
+.contact-links{
+    display:flex;
+    justify-content:center;
+    gap:1.5rem;
+}
+.contact p {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+}
+.contact-icon{
+    margin-top:10px;
+}
+.contact-icon img{
+    width:40px;
+}
+.contact-icon  img:hover{
+    transform:scale(1.2);
+    transition:ease-in-out 0.2s;
+}
+.contact-icon a{
+    text-decoration: none;
+    color:#f5f5f5;
+    font-size:1.1rem;
+}
+/* Footer */
+footer {
+    background-color: #111;
+    color: #bbb;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 0.9rem;
+}
